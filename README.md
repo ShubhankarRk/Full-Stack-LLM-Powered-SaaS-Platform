@@ -63,7 +63,7 @@ It demonstrates competency in modern AI application development, LLM integration
 - Cost-controlled deployment setup
 
 ## Architecture Overview
-#Frontend (Next.js)
+Frontend (Next.js)
 |
 |--- Client-Side Auth (Clerk)
 |--- Secure Token → Backend
