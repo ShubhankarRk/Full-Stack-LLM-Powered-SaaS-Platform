@@ -1,5 +1,33 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
+## Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```bash
+# Clerk Authentication
+# Get these from your Clerk dashboard: https://dashboard.clerk.com
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+CLERK_JWKS_URL=https://your-clerk-domain.clerk.accounts.dev/.well-known/jwks.json
+
+# OpenAI API Key
+# Get this from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=sk-...
+```
+
+To export these variables to your shell session, use:
+```bash
+# For bash/zsh - safer method that handles spaces and special characters
+set -a
+source .env
+set +a
+```
+
+Or use the helper script:
+```bash
+source scripts/load-env.sh
+```
+
 ## Getting Started
 
 First, run the development server:
